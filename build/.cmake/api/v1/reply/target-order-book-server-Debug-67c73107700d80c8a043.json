@@ -19,7 +19,8 @@
 			"include",
 			"find_package",
 			"find_dependency",
-			"target_include_directories"
+			"target_include_directories",
+			"target_sources"
 		],
 		"files" : 
 		[
@@ -99,6 +100,12 @@
 				"file" : 0,
 				"line" : 59,
 				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 62,
+				"parent" : 0
 			}
 		]
 	},
@@ -145,7 +152,9 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2
 			]
 		}
 	],
@@ -217,7 +226,9 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2
 			]
 		}
 	],
@@ -227,6 +238,18 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "main.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 0,
+			"path" : "controllers/OrderController.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 0,
+			"path" : "controllers/WsMarketController.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

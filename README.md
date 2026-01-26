@@ -32,4 +32,5 @@ cmake .
 cmake --build .
 .\order-book-server
 ```
+> UI is a React app made with Vite in /ui directory. Checkout Readme in /ui. 
 
