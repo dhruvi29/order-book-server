@@ -1,12 +1,15 @@
 #pragma once
 
 #include <drogon/WebSocketController.h>
+#include <set>
 
 using namespace drogon;
 
 class WsMarketController : public drogon::WebSocketController<WsMarketController>
 {
   public:
+    static std::set<WebSocketConnectionPtr> clients;
+
      void handleNewMessage(const WebSocketConnectionPtr&,
                                   std::string &&,
                                   const WebSocketMessageType &) override;
@@ -16,5 +19,6 @@ class WsMarketController : public drogon::WebSocketController<WsMarketController
     WS_PATH_LIST_BEGIN
     // list path definitions here;
     // WS_PATH_ADD("/path", "filter1", "filter2", ...);
+    WS_PATH_ADD("/price");
     WS_PATH_LIST_END
 };
