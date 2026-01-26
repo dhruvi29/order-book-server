@@ -1,6 +1,6 @@
 #include "PriceBroadcaster.h"
 
-void MarketBroadcaster::start()
+void PriceBroadcaster::start()
 {
     drogon::app().getLoop()->runEvery(
         1.0, // every 1 second

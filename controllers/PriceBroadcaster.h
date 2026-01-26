@@ -3,7 +3,7 @@
 #include <drogon/drogon.h>
 #include <random>
 
-class MarketBroadcaster {
+class PriceBroadcaster {
 public:
     static void start();
 };
