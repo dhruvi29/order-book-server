@@ -154,7 +154,8 @@
 			[
 				0,
 				1,
-				2
+				2,
+				3
 			]
 		}
 	],
@@ -228,7 +229,8 @@
 			[
 				0,
 				1,
-				2
+				2,
+				3
 			]
 		}
 	],
@@ -244,6 +246,12 @@
 			"backtrace" : 13,
 			"compileGroupIndex" : 0,
 			"path" : "controllers/OrderController.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 0,
+			"path" : "controllers/PriceBroadcaster.cc",
 			"sourceGroupIndex" : 0
 		},
 		{

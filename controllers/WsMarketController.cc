@@ -5,6 +5,7 @@ std::set<WebSocketConnectionPtr> WsMarketController::clients;
 void WsMarketController::handleNewMessage(const WebSocketConnectionPtr& wsConnPtr, std::string &&message, const WebSocketMessageType &type)
 {
     // write your application logic here
+    if (message.empty()) return;
     std::cout << "Message received: " << message << std::endl;
     for (auto &c : WsMarketController::clients) {
         c->send(message);
