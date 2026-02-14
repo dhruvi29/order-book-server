@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './StockPrice.css'
+import '../styles/StockPrice.css'
 
 export default function StockPrice() {
   const [stockPrice, setStockPrice] = useState(0)

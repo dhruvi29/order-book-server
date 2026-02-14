@@ -44,10 +44,11 @@ export default function OrderPutForm() {
     <form className="order-form-container" onSubmit={handleSubmit}>
       <h3 className="order-form-title">Submit Order</h3>
       <div className="order-form-fields">
-        <label className="order-form-label">
-          Direction
+        <div className="order-form-row">
+          <label className="order-form-label" htmlFor="direction">Direction</label>
           <select
             className="order-form-select"
+            id="direction"
             name="direction"
             value={order.direction}
             onChange={handleChange}
@@ -56,11 +57,12 @@ export default function OrderPutForm() {
             <option value="buy">Buy</option>
             <option value="sell">Sell</option>
           </select>
-        </label>
-        <label className="order-form-label">
-          Quantity
+        </div>
+        <div className="order-form-row">
+          <label className="order-form-label" htmlFor="quantity">Quantity</label>
           <input
             className="order-form-input"
+            id="quantity"
             name="quantity"
             placeholder="Quantity"
             type="number"
@@ -69,11 +71,12 @@ export default function OrderPutForm() {
             required
             min={1}
           />
-        </label>
-        <label className="order-form-label">
-          Price
+        </div>
+        <div className="order-form-row">
+          <label className="order-form-label" htmlFor="price">Price</label>
           <input
             className="order-form-input"
+            id="price"
             name="price"
             placeholder="Price"
             type="number"
@@ -83,7 +86,7 @@ export default function OrderPutForm() {
             required
             min={0}
           />
-        </label>
+        </div>
       </div>
       <button
         className="order-form-button"

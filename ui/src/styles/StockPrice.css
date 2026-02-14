@@ -1,0 +1,24 @@
+.stock-price-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stock-price-display {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00e676;
+  margin-bottom: 0.5em;
+}
+
+.stock-price-label {
+  font-size: 1.1rem;
+  color: #b0b3b8;
+  margin-right: 0.5em;
+}
+
+.stock-price-value {
+  color: #00e676;
+  font-weight: 700;
+}
