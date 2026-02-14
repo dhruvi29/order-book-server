@@ -27,7 +27,6 @@ body {
 
 .card {
   background: #23272f;
-  border-radius: 14px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.12);
   padding: 2em 2.5em;
   margin-bottom: 2em;
@@ -60,7 +59,6 @@ body {
 /* OrderPutForm styles */
 .order-form-container {
   background: #23272f;
-  border-radius: 14px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.12);
   padding: 2em 2.5em;
   width: 100%;
@@ -89,7 +87,6 @@ body {
 .order-form-select {
   margin-top: 4px;
   padding: 0.5em;
-  border-radius: 6px;
   border: 1px solid #353945;
   background: #181a20;
   color: #f5f6fa;
@@ -102,7 +99,6 @@ body {
 }
 .order-form-button {
   padding: 0.7em;
-  border-radius: 8px;
   border: none;
   background: #00e676;
   color: #181a20;

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../styles/OrderPutForm.css';
 
-export default function OrderPutForm() {
+export default function OrderPutForm({ onOrderSubmit }) {
   const [order, setOrder] = useState({ direction: 'buy', quantity: '', price: '' });
   const [response, setResponse] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -29,10 +29,11 @@ export default function OrderPutForm() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(order),
       });
-        console.log(res);
-        const data = await res.text();
-        console.log(data);
+      const data = await res.text();
       setResponse(data);
+      if (onOrderSubmit) {
+        onOrderSubmit(order);
+      }
     } catch (err) {
       setError('Failed to submit order');
     } finally {
