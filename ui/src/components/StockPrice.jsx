@@ -12,7 +12,7 @@ export default function StockPrice() {
     }
 
     ws.onmessage = (event) => {
-      console.log('Message from server:', event.data)
+      // console.log('Message from server:', event.data)
       setStockPrice(event.data)
     }
 

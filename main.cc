@@ -2,7 +2,7 @@
 #include "controllers/PriceBroadcaster.h"
 
 int main() {
-    MarketBroadcaster::start();
+    PriceBroadcaster::start();
 
     //Set HTTP listener address and port
     drogon::app().addListener("127.0.0.1", 8080);
